@@ -7,28 +7,17 @@ Sense HAT → PostgreSQL → Plotly Dash: Minimal IIoT pipeline
 ```
 sensehat-pg-dash/
 ├─ collector/                # code that runs on the Raspberry Pi
-│  ├─ Lab_12.py              # your Sense HAT → PostgreSQL writer
+│  ├─ Lab_12.py              # Sense HAT → PostgreSQL writer
 ├─ dashboard/                # code that runs on the laptop (or any host)
-│  ├─ dash_app.py            # your Plotly Dash UI
+│  ├─ dash_app.py            # Plotly Dash UI
 ├─ assets/
 │  ├─ psql.jpg               # DB screenshot
 │  ├─ dashboard.png          # dashboard screenshot
-├─ .env.example              # sample env vars (no secrets)
 ├─ requirements.txt          # pinned Python deps for both sides
-├─ .gitignore
 └─ README.md
 ```
 
-# New supporting files
-
-## `.gitignore`
-
-```
-__pycache__/
-*.pyc
-.env
-.venv/
-```
+# supporting files
 
 ## `requirements.txt`
 
@@ -40,22 +29,6 @@ psycopg2-binary>=2.9
 sense-hat>=2.6 
 python-dotenv>=1.0
 ```
-
-## `.env.example`
-
-```
-# Shared DB settings
-PGHOST=10.234.143.103
-PGPORT=5432
-PGDATABASE=iiot_lab
-PGUSER=group2
-PGPASSWORD=change-me
-
-# Dashboard server settings (laptop)
-DASH_HOST=0.0.0.0
-DASH_PORT=8050
-```
-
 
 ## Overview
 
