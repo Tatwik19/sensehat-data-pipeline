@@ -1,0 +1,6 @@
+dash>=2.17
+plotly>=5.22
+pandas>=2.2
+psycopg2-binary>=2.9
+sense-hat>=2.6     # only needed on the Pi; safe to list here
+python-dotenv>=1.0
