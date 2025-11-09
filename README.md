@@ -40,8 +40,8 @@ The Raspberry Pi reads Sense HAT measurements, writes rows into PostgreSQL, and 
 
 ## Architecture
 
-Edge: Raspberry Pi 4 + Sense HAT
-Database: PostgreSQL on the Pi
+Edge: Raspberry Pi 4 + Sense HAT  
+Database: PostgreSQL on the Pi  
 Visualization: Plotly Dash running on the laptop, reading the Pi’s database over LAN
 
 ## Prerequisites
@@ -132,7 +132,7 @@ Visualization: Plotly Dash running on the laptop, reading the Pi’s database ov
    python collector/Lab_12.py
    ```
 
-   The script will create table `sensor_data` if missing and append a row every 5 s.
+   The script will create the `sensor_data` table if it is missing and append a row every 5 seconds.
 
 9. Optional: run the collector as a service.
 
